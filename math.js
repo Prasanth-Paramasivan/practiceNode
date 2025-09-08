@@ -1,5 +1,3 @@
-const { error } = require("jquery");
-
 const add = (a,b) => {
     return a+b;
 }
@@ -11,11 +9,11 @@ const multiply = (a,b) => {
 }
 const divide = (a,b) => {
     if(b===0){
-        throw new error("Cannot divide by 0")
+        alert("Cannot divide by 0")
     }
     return a/b;
 }
 
-module.exports = {
+export default {
     add,subtract,multiply,divide,
 }
